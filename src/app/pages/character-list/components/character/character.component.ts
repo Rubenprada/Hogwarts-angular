@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Character } from './../../../../core/services/characters.model';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-character',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./character.component.scss']
 })
 export class CharacterComponent {
-
+  //input para recibir la información del character-list
+  @Input() public character?: Character;
 }

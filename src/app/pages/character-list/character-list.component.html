@@ -1,2 +1,14 @@
-<p>character-list works!</p>
-<div>{{ 'HELLO' | translate }}</div>
+<p>Aqui está el character list</p>
+<!--Para ejecutar bien el translate, como si fuera un objeto, porque en el json hemos creado como
+una especie de objeto, en que el componente tiene las cosas a traducir-->
+<p>{{ 'CHARACTER-LIST.OUR STUDENTS AND STAFF' | translate }}</p>
+<!--Pintamos con el character los elementos
+    (se renderiza por cada elemento), NO CON EL CHARACTER-LIST.
+[input] ==> que tiene el componente character para recibir la info del bucle for que hacemos -->
+<app-character
+    *ngFor="let character of characters"
+    [character]="character"
+>
+    
+    
+</app-character>

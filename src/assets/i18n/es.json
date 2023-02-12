@@ -1,4 +1,13 @@
 {
     "HELLO": "hola mundo",
-    "GREETING": "Encantado"
+    "GREETING": "Encantado",
+    "CHARACTER-LIST": {
+        "OUR STUDENTS AND STAFF": "Nuestros alumnos y alumnado:"
+    },
+    "CHARACTER": {
+        "NAME": "Nombre",
+        "FAMOUS TWIN": "Gemelo famoso",
+        "HOUSE": "Casa"
+
+    }
 }

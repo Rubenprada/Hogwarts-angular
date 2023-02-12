@@ -1,3 +1,4 @@
+import { characters } from './../../core/services/characters.data';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./character-list.component.scss']
 })
 export class CharacterListComponent {
+
+  //variable pública para que van a ser todos nuestros personajes
+  public characters = characters;
 
 }
