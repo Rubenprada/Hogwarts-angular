@@ -7,6 +7,9 @@
     "CHARACTER": {
         "NAME": "Name",
         "FAMOUS TWIN": "Famous twin",
-        "HOUSE": "House"
+        "HOUSE": "House",
+        "GENDER": "Gender",
+        "male": "male",
+        "female": "female"
     }
 }
