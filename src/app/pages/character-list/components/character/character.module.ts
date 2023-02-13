@@ -7,6 +7,8 @@ import { CommonModule } from '@angular/common';
 //usar el translate en modulos
 import { TranslateModule} from '@ngx-translate/core'
 
+//importamos fontawesome
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,8 @@ import { TranslateModule} from '@ngx-translate/core'
   imports: [
     CommonModule,
     //hay que importarlo tambien el traductor
-    TranslateModule
+    TranslateModule,
+    FontAwesomeModule
   ],
   exports: [
     CharacterComponent

@@ -1,3 +1,4 @@
+import { CharacterModule } from './components/character/character.module';
 
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -10,12 +11,13 @@ import { TranslateModule} from '@ngx-translate/core'
 @NgModule({
   declarations: [
     CharacterListComponent,
-    CharacterComponent
+    
   ],
   imports: [
     CommonModule,
     //hay que importarlo tambien el traductor
-    TranslateModule
+    TranslateModule,
+    CharacterModule
   ],
   exports: [
     CharacterListComponent

@@ -4,10 +4,32 @@ con el bucle, a traves de un input-->
 <div
     *ngIf="character"
     class="character"
+    [ngStyle]="{'background-color': character.house === 'Gryffindor' ? 'red' : 'yellow'}"
+    
 >
-    <img src="{{character.image}}" alt="character">
-    <p>{{"CHARACTER.NAME" | translate }}: {{ character.name }}</p>
-    <p>{{"CHARACTER.FAMOUS TWIN" | translate }}: <a href="https://es.wikipedia.org/wiki/Anexo:Reparto_de_pel%C3%ADculas_de_Harry_Potter">{{character.actor}}</a></p>
-    <p>{{"CHARACTER.HOUSE" | translate }}: {{ character.house }}</p>
-    <p>{{"CHARACTER.GENDER" | translate }}: {{character.gender}}</p>
+    <div 
+        class="character__div"    
+    ><img class="character__image" src="{{character.image}}">
+    </div>
+    <div class="character__info">
+        <p class="character__name">{{"CHARACTER.NAME" | translate }}: {{ character.name }}</p>
+        <p class="character__actor">{{"CHARACTER.FAMOUS TWIN" | translate }}: <a href="https://es.wikipedia.org/wiki/Anexo:Reparto_de_pel%C3%ADculas_de_Harry_Potter">{{character.actor}}</a></p>
+        <p class="character__house">{{"CHARACTER.HOUSE" | translate }}: {{ character.house }}</p>
+        <p class="character__genre">{{"CHARACTER.GENDER" | translate }}:  
+            <span
+                *ngIf="character.gender == 'male'"
+            ><i class="fa-solid fa-mars"></i></span>
+            <span
+                *ngIf="character.gender == 'female'"
+            ><i class="fa-solid fa-venus"></i></span>  
+        </p>
+        <p class="character__status">{{"CHARACTER.ALIVE" | translate}}: 
+            <span
+                *ngIf="character.alive == false"
+            ><i class="fa-solid fa-skull-crossbones"></i></span>
+            <span
+                *ngIf="character.alive == true"
+            ><i class="fa-solid fa-heart-pulse"></i></span>
+        </p>
+    </div>
 </div>

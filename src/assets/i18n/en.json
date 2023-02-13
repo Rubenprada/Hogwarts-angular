@@ -9,7 +9,6 @@
         "FAMOUS TWIN": "Famous twin",
         "HOUSE": "House",
         "GENDER": "Gender",
-        "male": "male",
-        "female": "female"
+        "ALIVE": "Status"
     }
 }

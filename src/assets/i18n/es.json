@@ -9,8 +9,7 @@
         "FAMOUS TWIN": "Gemelo famoso",
         "HOUSE": "Casa",
         "GENDER": "Género",
-        "male": "Másculino",
-        "female": "femenino"
+        "ALIVE": "Estado"
 
     }
 }

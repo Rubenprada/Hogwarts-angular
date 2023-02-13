@@ -5,10 +5,12 @@ una especie de objeto, en que el componente tiene las cosas a traducir-->
 <!--Pintamos con el character los elementos
     (se renderiza por cada elemento), NO CON EL CHARACTER-LIST.
 [input] ==> que tiene el componente character para recibir la info del bucle for que hacemos -->
-<app-character
-    *ngFor="let character of characters"
-    [character]="character"
+<div
+    class="character__list"
 >
-    
-    
-</app-character>
+    <app-character
+        *ngFor="let character of characters"
+        [character]="character"
+    >
+    </app-character>
+</div>
