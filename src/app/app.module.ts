@@ -1,3 +1,4 @@
+import { CoreModule } from './core/core.module';
 import { CharacterListModule } from './pages/character-list/character-list.module';
 
 import { HttpClient, HttpClientModule } from '@angular/common/http';
@@ -33,7 +34,8 @@ export function createTranslateLoader(http: HttpClient) {
         useFactory: (createTranslateLoader),
         deps: [HttpClient]
       }
-    })
+    }),
+    CoreModule
   ],
   exports: [],
   providers: [],

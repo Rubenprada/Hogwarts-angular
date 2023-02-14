@@ -1,1 +1,34 @@
-<p>header works!</p>
+
+<div
+    class="header"
+>
+    <a
+        class="header__link"
+        [routerLink]="['home']"
+    > {{ "HEADER.HOME" | translate }}</a>
+    <a
+        class="header__link"
+        [routerLink]="['character-list']"
+    >{{ 'HEADER.OUR STUDENTS AND STAFF' | translate }}</a>
+    <div
+        class="header__div"
+    >
+        <label
+            class="header__label"
+        >
+            {{"HEADER.LANGUAGE" | translate}}
+            <select 
+                class="header__label_select"
+                #langSelect 
+                (change)="changeLang(langSelect.value)"
+            >
+                <option *ngFor="let lang of langs" [value]="lang">
+                    {{lang}}
+                </option>
+            </select>
+        </label>
+    </div>
+   
+</div>
+
+

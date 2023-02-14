@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { CharacterListRoutingModule } from './character-list-routing.module';
 import { CharacterModule } from './components/character/character.module';
 
@@ -19,7 +20,8 @@ import { TranslateModule} from '@ngx-translate/core'
     //hay que importarlo tambien el traductor
     TranslateModule,
     CharacterModule,
-    CharacterListRoutingModule
+    CharacterListRoutingModule,
+    RouterModule
   ],
   exports: [
     CharacterListComponent

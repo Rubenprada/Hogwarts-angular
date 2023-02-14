@@ -1,0 +1,18 @@
+.detail{
+    display: flex;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    &__container{
+        margin-top: 60px;
+    }
+    &__img{
+        border-radius: 150px;
+    }
+    &__name{
+        margin-top: 25px;
+    }
+    &__parraf{
+        padding-top: 10px;
+    }
+}

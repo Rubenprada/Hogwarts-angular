@@ -1,0 +1,25 @@
+.header {
+    background-color: beige;
+    border-bottom: 1px black  solid;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    &__link{
+        margin: 15px;
+        justify-content: flex-start;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+    }
+    &__div{
+        display: flex;
+    }
+    &__label{
+        justify-content: center;
+        align-items: center;
+        padding-top: 14px;
+    }
+}

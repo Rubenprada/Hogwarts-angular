@@ -1,6 +1,7 @@
 
 import { Character } from './../../../../core/services/characters.model';
 import { Component,  Input, Renderer2, ViewChild  } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -15,14 +16,14 @@ export class CharacterComponent {
   public img: string = 'https://static.wikia.nocookie.net/esharrypotter/images/6/63/PM_Mago_desconocido.png/revision/latest/scale-to-width-down/250?cb=20180831033135'
  
   constructor( 
-    
-  ) {
-    
-    
-   
-    
-    
+    private router: Router
+  ) {   }
+  //funcion para navegar al personaje
+  public goToDetail() {
+    if (this.character) {
+      //si hay personaje navegamos a detail + path del id
+      
+      this.router.navigate(['detail', this.character.id])
+    }
   }
-  
-  
 }

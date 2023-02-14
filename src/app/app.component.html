@@ -1,16 +1,8 @@
-<div>{{ 'HELLO' | translate }}</div>
 
-<label>
-    change
-    <select 
-        #langSelect 
-        (change)="changeLang(langSelect.value)"
-        >
-            <option *ngFor="let lang of langs" [value]="lang">
-                {{lang}}
-            </option>
-    </select>
-</label>
+<app-header></app-header>
+
+
 <router-outlet>
-    <app-character-list></app-character-list>
+    
 </router-outlet>
+<app-footer></app-footer>

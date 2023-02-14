@@ -31,5 +31,8 @@ con el bucle, a traves de un input-->
                 *ngIf="character.alive == true"
             ><i class="fa-solid fa-heart-pulse"></i></span>
         </p>
+        <button
+            (click)="goToDetail()"
+        >{{ "CHARACTER.SEEMORE" | translate }}</button>
     </div>
 </div>

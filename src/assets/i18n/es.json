@@ -2,14 +2,31 @@
     "HELLO": "hola mundo",
     "GREETING": "Encantado",
     "CHARACTER-LIST": {
-        "OUR STUDENTS AND STAFF": "Nuestros alumnos y alumnado:"
+        "OUR STUDENTS AND STAFF": "Nuestros alumnos y miembros del colegio:"
     },
     "CHARACTER": {
         "NAME": "Nombre",
         "FAMOUS TWIN": "Gemelo famoso",
         "HOUSE": "Casa",
         "GENDER": "Género",
-        "ALIVE": "Estado"
+        "ALIVE": "Estado",
+        "SEEMORE": "Ver más"
 
+    },
+    "HEADER": {
+        "OUR STUDENTS AND STAFF": "Nuestros alumnos y miembros del colegio",
+        "HOME": "Página principal",
+        "LANGUAGE": "Idioma"
+    },
+    "NOTFOUND": {
+        "DANGER": "La página la que intentas acceder no existe"
+    },
+    "DETAIL": {
+        "DATEOFBIRTHDAY": "Cumpleaños",
+        "STUDENT": "Alumno",
+        "TEACHER": "Profesor",
+        "NAME": "Nombre",
+        "YES": "Si",
+        "NO": "No"
     }
 }

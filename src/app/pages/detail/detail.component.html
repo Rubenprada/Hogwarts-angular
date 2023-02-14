@@ -1,0 +1,36 @@
+<div
+    class="detail"
+    *ngIf="character"
+>
+    <div
+        class="detail__container"
+    >   
+        <img class="detail__img" src="{{character.image}}" alt="">
+        <p class="detail__name">{{"DETAIL.NAME" | translate}}: {{character.name}}</p>
+        <p class="detail__parraf">{{"DETAIL.DATEOFBIRTHDAY" | translate}}: {{character.dateOfBirth}}</p>
+        <p class="detail__parraf">{{"DETAIL.STUDENT" | translate}}: 
+            <span
+                *ngIf="character.hogwartsStudent == true"
+            >{{"DETAIL.YES" | translate}}</span>
+            <span
+                *ngIf="character.hogwartsStudent == false"
+            >{{"DETAIL.NO" | translate}}</span>
+        </p>
+        <p class="detail__parraf">{{"DETAIL.TEACHER" | translate}}: 
+            <span
+                *ngIf="character.hogwartsStaff == true"
+            >{{"DETAIL.YES" | translate}}</span>
+            <span
+                *ngIf="character.hogwartsStaff == false"
+            >{{"DETAIL.NO" | translate}}</span>
+        </p>
+        <h2>ajsdkjas
+
+        </h2>
+    </div> 
+</div>
+<ng-template
+    #productNotFound
+>
+    <h2>El personaje que buscas no existe</h2>
+</ng-template>

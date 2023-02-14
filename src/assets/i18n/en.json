@@ -9,6 +9,23 @@
         "FAMOUS TWIN": "Famous twin",
         "HOUSE": "House",
         "GENDER": "Gender",
-        "ALIVE": "Status"
+        "ALIVE": "Status",
+        "SEEMORE": "See more"
+    },
+    "HEADER": {
+        "OUR STUDENTS AND STAFF": "All our students and staff",
+        "HOME": "Home",
+        "LANGUAGE": "Language"
+    },
+    "NOTFOUND": {
+        "DANGER": "The page you are trying to access does not exist"
+    },
+    "DETAIL": {
+        "DATEOFBIRTHDAY": "Date of birthday",
+        "STUDENT": "Student",
+        "TEACHER": "Teacher",
+        "NAME": "Name",
+        "YES": "Yes",
+        "NO": "No"
     }
 }
