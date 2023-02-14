@@ -1,9 +1,10 @@
+import { CharacterListRoutingModule } from './character-list-routing.module';
 import { CharacterModule } from './components/character/character.module';
 
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CharacterListComponent } from './character-list.component';
-import { CharacterComponent } from './components/character/character.component';
+
 //usar el translate en modulos
 import { TranslateModule} from '@ngx-translate/core'
 
@@ -17,7 +18,8 @@ import { TranslateModule} from '@ngx-translate/core'
     CommonModule,
     //hay que importarlo tambien el traductor
     TranslateModule,
-    CharacterModule
+    CharacterModule,
+    CharacterListRoutingModule
   ],
   exports: [
     CharacterListComponent
