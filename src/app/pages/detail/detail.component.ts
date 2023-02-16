@@ -1,7 +1,7 @@
-import { Character } from './../../core/services/characters.model';
+import { ApiCharacter } from '../../core/services/characters/api/api-characters.model';
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { characters } from 'src/app/core/services/characters.data';
+import { characters } from 'src/app/core/services/characters/characters.data';
 
 @Component({
   selector: 'app-detail',
@@ -11,7 +11,7 @@ import { characters } from 'src/app/core/services/characters.data';
 export class DetailComponent {
 
 
-  public character?: Character;
+  public character?: ApiCharacter;
 
   constructor(
     private activateRouter: ActivatedRoute

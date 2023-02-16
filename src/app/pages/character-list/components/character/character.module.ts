@@ -1,3 +1,4 @@
+
 import { CharacterComponent } from './character.component';
 
 import { NgModule } from '@angular/core';
@@ -18,7 +19,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     CommonModule,
     //hay que importarlo tambien el traductor
     TranslateModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    
   ],
   exports: [
     CharacterComponent
