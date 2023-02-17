@@ -1,3 +1,4 @@
+import { CharacterModule } from './../character-list/components/character/character.module';
 import { TranslateModule } from '@ngx-translate/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterModule } from '@angular/router';
@@ -17,7 +18,8 @@ import { DetailComponent } from './detail.component';
     DetailRoutingModule,
     RouterModule,
     FontAwesomeModule,
-    TranslateModule
+    TranslateModule,
+    CharacterModule
   ]
 })
 export class DetailModule { }

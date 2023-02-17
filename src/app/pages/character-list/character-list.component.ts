@@ -1,7 +1,9 @@
-import { ApiCharacterService } from './../../core/services/characters/api/api-character.service';
-import { ApiCharacter } from '../../core/services/characters/api/api-characters.model';
+import { Observable } from 'rxjs';
+import { Character } from './../../core/services/characters/character.model';
 
-import { characters } from '../../core/services/characters/characters.data';
+import { CharactersService } from 'src/app/core/services/characters/characters.service';
+
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -12,20 +14,20 @@ import { Component, OnInit } from '@angular/core';
 export class CharacterListComponent implements OnInit{
 
   //variable pública para que van a ser todos nuestros personajes
-  public characters: ApiCharacter[] = [];
+  //con las propiedades del modelo character
+  public characters$?: Observable<Character[]>;
   
   
   constructor(
-    private charactersService: ApiCharacterService
+    private charactersService: CharactersService
   ) {}
     //primero se ejecuta el constructor con los servicios de api
     //y para que todo suceda bien, luego usamos el ngoninit para que se
     //ejecute después del constructor, es decir, despues que la el servicio de la api
     //nos traiga los datos
   public ngOnInit() {
-    this.charactersService.getApiProducts().subscribe((characatersFromApi) => {
-      this.characters = characatersFromApi;
-    })
+    this.characters$ = this.charactersService.getCharacters()
+    
   }
   
 }

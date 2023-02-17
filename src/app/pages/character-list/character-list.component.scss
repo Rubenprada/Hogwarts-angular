@@ -1,6 +1,10 @@
-.character__list {
+.character__list_container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 24px;
+}
+.character__list_h1{
+    text-align: center;
+    padding: 20px;
 }

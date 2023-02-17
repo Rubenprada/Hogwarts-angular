@@ -26,8 +26,8 @@ export interface ApiCharacter {
 
 //casas
 export type House = 'Gryffindor'
-| 'Slytherin'
-| 'Hufflepuff'
-| 'Ravenclaw'
-| '';
+|    'Slytherin'
+|    'Hufflepuff'
+|    'Ravenclaw'
+|    '';
 

@@ -19,7 +19,13 @@ export class ApiCharacterService {
 
 
   //metodo GET que nos trae los personajes
-  public getApiProducts(): Observable<ApiCharacter[]> {
+  public getApiCharacters(): Observable<ApiCharacter[]> {
     return this.http.get<ApiCharacter[]>(`${API_CHARACTER_URL}/characters`);
+  }
+
+  //Get para obtener los detalles del personaje.
+  //los objetenemos por id
+  public getApiCharacterDetail(id: string): Observable<ApiCharacter> {
+    return this.http.get<ApiCharacter>(`${API_CHARACTER_URL}/characters/${id}`)
   }
 }

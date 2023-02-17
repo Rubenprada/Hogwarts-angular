@@ -4,7 +4,7 @@ con el bucle, a traves de un input-->
 <div
     *ngIf="character"
     class="character"
-    [ngStyle]="{'background-color': character.house === 'Gryffindor' ? 'red' : 'yellow'}"
+    [ngStyle]="{'background-color': character.alive === true ? 'green' : 'grey'}"
     
 >
     <div 
@@ -14,7 +14,7 @@ con el bucle, a traves de un input-->
     <div class="character__info">
         <p class="character__name">{{"CHARACTER.NAME" | translate }}: {{ character.name }}</p>
         <p class="character__actor">{{"CHARACTER.FAMOUS TWIN" | translate }}: <a href="https://es.wikipedia.org/wiki/Anexo:Reparto_de_pel%C3%ADculas_de_Harry_Potter">{{character.actor}}</a></p>
-        <p class="character__house">{{"CHARACTER.HOUSE" | translate }}: {{ character.house }}</p>
+        <p class="character__house">{{"CHARACTER.HOUSE" | translate }}: {{ character.house.name }}</p>
         <p class="character__genre">{{"CHARACTER.GENDER" | translate }}:  
             <span
                 *ngIf="character.gender == 'male'"
@@ -31,6 +31,7 @@ con el bucle, a traves de un input-->
                 *ngIf="character.alive == true"
             ><i class="fa-solid fa-heart-pulse"></i></span>
         </p>
+        
         <button
             (click)="goToDetail()"
         >{{ "CHARACTER.SEEMORE" | translate }}</button>

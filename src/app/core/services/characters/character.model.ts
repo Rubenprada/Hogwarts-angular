@@ -1,4 +1,5 @@
-import { House } from './api/api-characters.model';
+import { Homes } from './../houses/homes.model';
+
 
 
 //interfaz con los datos que usamos solo
@@ -7,7 +8,7 @@ export interface Character {
     name: string;
     actor: string;
     gender: string;
-    house: House;
+    house: Homes;
     image: string;
     hogwartsStaff: boolean;
     hogwartsStudent: boolean;
