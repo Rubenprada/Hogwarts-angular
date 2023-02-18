@@ -19,7 +19,7 @@ export class HeaderComponent {
     translate.setDefaultLang('en');
     translate.use('en'),
     //idiomas soportados ingles y español
-    this.translate.addLangs(['es', 'en']);
+    this.translate.addLangs(['en', 'es']);
     this.langs = this.translate.getLangs();
 
   }
