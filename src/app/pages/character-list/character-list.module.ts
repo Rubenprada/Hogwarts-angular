@@ -1,3 +1,4 @@
+import { SharedModule } from './../../shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { CharacterListRoutingModule } from './character-list-routing.module';
 import { CharacterModule } from './components/character/character.module';
@@ -8,6 +9,7 @@ import { CharacterListComponent } from './character-list.component';
 
 //usar el translate en modulos
 import { TranslateModule} from '@ngx-translate/core'
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { TranslateModule} from '@ngx-translate/core'
     TranslateModule,
     CharacterModule,
     CharacterListRoutingModule,
-    RouterModule
+    RouterModule,
+    SharedModule,
+    FormsModule
   ],
   exports: [
     CharacterListComponent

@@ -11,4 +11,13 @@ export interface ApiHomes {
     founder: string;
     color: string;
     createdAt: string;
-}
+};
+
+export const houses: House[] = [
+    'Gryffindor',
+    'Slytherin',
+    'Hufflepuff',
+    'Ravenclaw',
+    ''
+]
+

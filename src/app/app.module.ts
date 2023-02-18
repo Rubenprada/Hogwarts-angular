@@ -1,3 +1,5 @@
+import { FilterPipe } from './shared/pipes/filter.pipe';
+import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 import { CharacterListModule } from './pages/character-list/character-list.module';
 
@@ -11,6 +13,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+
 //funcion traductor
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -21,6 +24,7 @@ export function createTranslateLoader(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
+   
     
   ],
   imports: [
@@ -35,7 +39,8 @@ export function createTranslateLoader(http: HttpClient) {
         deps: [HttpClient]
       }
     }),
-    CoreModule
+    CoreModule,
+    
   ],
   exports: [],
   providers: [],

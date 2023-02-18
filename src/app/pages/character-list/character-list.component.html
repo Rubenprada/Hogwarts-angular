@@ -7,13 +7,28 @@ una especie de objeto, en que el componente tiene las cosas a traducir-->
 <!--Pintamos con el character los elementos
     (se renderiza por cada elemento), NO CON EL CHARACTER-LIST.
 [input] ==> que tiene el componente character para recibir la info del bucle for que hacemos -->
-<div
-    class="character__list_container"
->
-    <app-character
-        *ngFor="let character of characters$ | async"
-        [character]="character"
+<div>
+    <div>
+        <input placeholder="Filtrar por nombre" [(ngModel)]="characterName">
+        <select 
+            name="houses"
+            required
+            [(ngModel)]="houses"
+        >
+            <option default value="">House</option>
+            <option 
+                *ngFor="let house of housesEl"
+                [value]="house"
+            >{{ house }}</option>
+    </select>
+    </div>
+    <div
+        class="character__list_container"
     >
-    </app-character>
-
+        <app-character
+            *ngFor="let character of characters$ | async | filter:characterName:houses"
+            [character]="character"
+        >
+        </app-character>
+    </div>
 </div>

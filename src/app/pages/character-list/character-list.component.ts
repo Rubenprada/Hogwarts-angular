@@ -1,3 +1,6 @@
+import { houses } from './../../core/services/characters/characters.data';
+
+import { House } from './../../core/services/characters/api/api-characters.model';
 import { Observable } from 'rxjs';
 import { Character } from './../../core/services/characters/character.model';
 
@@ -17,7 +20,11 @@ export class CharacterListComponent implements OnInit{
   //con las propiedades del modelo character
   public characters$?: Observable<Character[]>;
   
-  
+  //variable para el input de busqueda
+  public characterName: string = '';
+  public houses?: House;
+
+  public housesEl: House[] = houses;
   constructor(
     private charactersService: CharactersService
   ) {}
