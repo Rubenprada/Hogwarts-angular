@@ -16,7 +16,8 @@
     "HEADER": {
         "OUR STUDENTS AND STAFF": "Nuestros alumnos y miembros del colegio",
         "HOME": "Página principal",
-        "LANGUAGE": "Idioma"
+        "LANGUAGE": "Idioma",
+        "HOUSES": "Casas"
     },
     "NOTFOUND": {
         "DANGER": "La página la que intentas acceder no existe"

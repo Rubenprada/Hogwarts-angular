@@ -15,7 +15,8 @@
     "HEADER": {
         "OUR STUDENTS AND STAFF": "All our students and staff",
         "HOME": "Home",
-        "LANGUAGE": "Language"
+        "LANGUAGE": "Language",
+        "HOUSES": "Houses"
     },
     "NOTFOUND": {
         "DANGER": "The page you are trying to access does not exist"

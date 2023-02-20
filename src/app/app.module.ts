@@ -1,3 +1,4 @@
+import { HousesListModule } from './pages/houses-list/houses-list.module';
 import { FilterPipe } from './shared/pipes/filter.pipe';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
@@ -40,6 +41,7 @@ export function createTranslateLoader(http: HttpClient) {
       }
     }),
     CoreModule,
+    HousesListModule
     
   ],
   exports: [],

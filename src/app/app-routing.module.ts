@@ -25,6 +25,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/detail/detail.module').then(m => m.DetailModule)
   },
   {
+    path:'house-list',
+    loadChildren: () => import('./pages/houses-list/houses-list.module').then(m => m.HousesListModule)
+  },
+  {
     //para rutas no especificadas
     path: '**',
     loadChildren: () => import('./pages/not-found/not-found.module').then( m => m.NotFoundModule)
