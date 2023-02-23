@@ -1,3 +1,4 @@
+import { students } from 'src/app/core/services/students/students.data';
 import { Homes } from './../../core/services/houses/homes.model';
 
 import { Observable } from 'rxjs';
@@ -13,6 +14,8 @@ import { Component, OnInit } from '@angular/core';
 export class HousesListComponent implements OnInit {
 
   public houses$?: Observable<Homes[]>;
+
+  public students = students;
 
   constructor(
     private housesService: HousesService

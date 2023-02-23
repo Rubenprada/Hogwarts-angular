@@ -1,9 +1,35 @@
 
-<div>
-    <app-house
-        *ngFor="let house of houses$ | async "
-        [house]="house"
+<div
+    class="house__container"
+>
+    <h1
+        class="house__list_h1"
+    >{{"HOUSES.OUR HOMES" | translate }}</h1>
+    <div
+        class="house__list_container"
     >
+        <app-house
+            *ngFor="let house of houses$ | async "
+            [house]="house"
+        >
 
-    </app-house>
+        </app-house>
+    </div>
+    
 </div>
+<div
+    class="house__container"
+>
+    <h2>{{"HOUSES.Pre-registered students" | translate}}</h2>
+    <div
+        class="house__list_container"
+    >
+        <app-students
+            *ngFor="let students of students"
+            [student]="students"
+        >
+        </app-students>
+    
+    </div>
+</div>
+

@@ -1,18 +1,28 @@
+import { StudentsListModule } from './../pages/students-list/students-list.module';
+import { StudentsComponent } from './components/students/students.component';
+
+
 import { FilterPipe } from './pipes/filter.pipe';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 
 
+
+
 @NgModule({
   declarations: [
-    FilterPipe
+    FilterPipe,
+    StudentsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    
+    
   ],
   exports: [
-    FilterPipe
+    FilterPipe, 
+    StudentsComponent
   ]
 })
 export class SharedModule { }

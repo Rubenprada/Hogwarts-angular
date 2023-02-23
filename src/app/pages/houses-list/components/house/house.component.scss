@@ -1,0 +1,25 @@
+.house{
+    width: 200px;
+    margin-right: 24px;
+    border: 10px solid lightgrey;
+    box-shadow: 3px 3px 5px 3px lightgrey;
+    margin-bottom: 24px;
+    font-family: sans-serif;
+    cursor: pointer;
+    width: 250px;
+    &__div{
+        height: 300px;
+    }
+    &__p {
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: larger;
+    }
+    &__description{
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 20px;
+        font-family: cursive;
+    }
+}

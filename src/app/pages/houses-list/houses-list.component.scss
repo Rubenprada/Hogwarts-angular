@@ -1,0 +1,14 @@
+.house__container {
+    height: 100%;
+}
+.house__list_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 24px;
+}
+.house__list_h1{
+    text-align: center;
+    padding: 20px;
+    
+}

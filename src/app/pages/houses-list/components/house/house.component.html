@@ -2,10 +2,30 @@
 <div
     *ngIf="house"
     class="house"
+    [ngStyle]="{
+        'background-color': house.color
+    }"
 >
     <div
+
         class="house__div"
-    ><img src="{{ house.image }}" referrerpolicy="no-referrer">
+    >
+        <img [src]="house.image" />
+    </div>
+    <div>
+        <p
+            class="house__p"
+        >{{house.name}}</p>
+        <p
+            class="house__p"
+            *ngIf="house.name === ''"
+        >{{"HOUSES.the house for the undecided" | translate}}</p>
+        <p
+            class="house__description"
+        >{{ house.description }}</p>
+        
+    </div>
+
     
 
 </div>

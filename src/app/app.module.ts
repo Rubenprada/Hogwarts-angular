@@ -1,5 +1,7 @@
+
+import { StudentsListModule } from './pages/students-list/students-list.module';
 import { HousesListModule } from './pages/houses-list/houses-list.module';
-import { FilterPipe } from './shared/pipes/filter.pipe';
+
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 import { CharacterListModule } from './pages/character-list/character-list.module';
@@ -41,7 +43,9 @@ export function createTranslateLoader(http: HttpClient) {
       }
     }),
     CoreModule,
-    HousesListModule
+    HousesListModule,
+    StudentsListModule,
+    SharedModule
     
   ],
   exports: [],

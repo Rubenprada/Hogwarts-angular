@@ -22,7 +22,8 @@ export class HousesService {
           name: apiHouse.name,
           image: apiHouse.image,
           description: apiHouse.description,
-          founder: apiHouse.founder
+          founder: apiHouse.founder,
+          color: apiHouse.color
         }))
       })
     )

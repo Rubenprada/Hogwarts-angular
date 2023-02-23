@@ -4,7 +4,7 @@ con el bucle, a traves de un input-->
 <div
     *ngIf="character"
     class="character"
-    [ngStyle]="{'background-color': character.alive === true ? 'green' : 'grey'}"
+    [ngStyle]="{'background-color': character.alive === true ? 'lime' : 'grey'}"
     
 >
     <div 
@@ -33,6 +33,7 @@ con el bucle, a traves de un input-->
         </p>
         
         <button
+            class="character__button"
             (click)="goToDetail()"
         >{{ "CHARACTER.SEEMORE" | translate }}</button>
     </div>

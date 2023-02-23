@@ -1,14 +1,12 @@
-import { ApiHomes } from './../../core/services/houses/api/api-homes.models';
-import { Character } from './../../core/services/characters/character.model';
-import { Homes } from './../../core/services/houses/homes.model';
+
 
 import { characterIdEndpoit } from './../../core/services/characters/characters.data';
 
 import { ApiCharacter } from './../../core/services/characters/api/api-characters.model';
 
 
-import { Component, Input } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 import { CharactersService } from 'src/app/core/services/characters/characters.service';
 
@@ -24,7 +22,8 @@ export class DetailComponent  {
   
   constructor(
     private activateRouter: ActivatedRoute,
-    private characterService: CharactersService
+    private characterService: CharactersService,
+    private router: Router
   ) {
    
     //queryparam de la ruta actual, tengo que dejarlo con el array de personajes
@@ -35,6 +34,12 @@ export class DetailComponent  {
       
     })
 
+  }
+  //funcion para retornar a la lista de personajes
+  public goToCharacter() {
+    if(this.character) {
+      this.router.navigate(['character-list'])
+    }
   }
   
 }

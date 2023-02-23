@@ -16,7 +16,9 @@
         "OUR STUDENTS AND STAFF": "All our students and staff",
         "HOME": "Home",
         "LANGUAGE": "Language",
-        "HOUSES": "Houses"
+        "HOUSES": "Houses",
+        "STUDENTS": "Students",
+        "INSCRIPTION STUDENT": "Inscription new student"
     },
     "NOTFOUND": {
         "DANGER": "The page you are trying to access does not exist"
@@ -28,5 +30,16 @@
         "NAME": "Name",
         "YES": "Yes",
         "NO": "No"
+    },
+    "STUDENTS": {
+        "ENROLLED STUDENTS": "Enrolled students"
+    },
+    "HOUSES": {
+        "OUR HOMES": "Our homes",
+        "Pre-registered students": "Pre-registered students",
+        "the house for the undecided": "The house for the undecided"
+    },
+    "LOADING": {
+        "Loading": "...Loading"
     }
 }

@@ -1,0 +1,22 @@
+<div
+    *ngIf="student"
+    class="container"
+>
+    <div
+        class="students__container"
+    >
+        <div
+            class="container__div"
+        >
+            <img class="img" src="{{ student.avatar }}" alt="">
+        </div>
+        <div
+            class="container__p"
+        >
+    
+            <p>{{ student.surname }}</p>
+            <p>{{ student.name}}</p>
+        </div>
+    </div>
+
+</div>

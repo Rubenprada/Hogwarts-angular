@@ -1,3 +1,5 @@
+import { SharedModule } from './../../shared/shared.module';
+
 import { HousesListRoutingModule } from './houses-list-routing.module';
 import { HouseModule } from './components/house/house.module';
 import { RouterModule } from '@angular/router';
@@ -17,7 +19,9 @@ import { CommonModule } from '@angular/common';
     TranslateModule,
     RouterModule,
     HouseModule,
-    HousesListRoutingModule
+    HousesListRoutingModule,
+    SharedModule
+    
   ],
   exports: [
     HousesListComponent

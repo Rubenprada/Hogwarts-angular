@@ -17,7 +17,9 @@
         "OUR STUDENTS AND STAFF": "Nuestros alumnos y miembros del colegio",
         "HOME": "Página principal",
         "LANGUAGE": "Idioma",
-        "HOUSES": "Casas"
+        "HOUSES": "Casas",
+        "STUDENTS": "Estudiantes",
+        "INSCRIPTION STUDENT": "Inscripciones de nuevos alumnos"
     },
     "NOTFOUND": {
         "DANGER": "La página la que intentas acceder no existe"
@@ -29,5 +31,16 @@
         "NAME": "Nombre",
         "YES": "Si",
         "NO": "No"
+    }, 
+    "STUDENTS": {
+        "ENROLLED STUDENTS": "Alumnos inscritos"
+    },
+    "HOUSES": {
+        "OUR HOMES": "Nuestras casas",
+        "Pre-registered students": "Alumnos pre-inscritos",
+        "the house for the undecided": "the house for the undecided"
+    },
+    "LOADING": {
+        "Loading": "...Cargando"
     }
 }

@@ -28,4 +28,18 @@
     &__info{
         padding: 8px;
     }
+    &__button{
+        height: 25px;
+        border-radius: 50px;
+        color: aliceblue;
+        background-color: black;
+    }
+    &__button:hover{
+        height: 50px;
+        color: blue;
+        width: 100px;
+        font-size: large;
+        font-weight: bolder;
+        cursor: pointer;
+    }
 }

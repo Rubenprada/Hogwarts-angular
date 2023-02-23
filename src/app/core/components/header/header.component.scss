@@ -1,7 +1,7 @@
 .header {
-    background-color: beige;
-    border-bottom: 1px black  solid;
-    height: 40px;
+    background-color: rgb(232, 232, 232);
+    border-bottom: 5px black  solid;
+    height: auto;
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -13,6 +13,11 @@
         text-decoration: none;
         text-transform: uppercase;
         color: black;
+    }
+    &__link:hover{
+        color: yellowgreen;
+        font-weight: bolder;
+        
     }
     &__div{
         display: flex;

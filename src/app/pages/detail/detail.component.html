@@ -5,6 +5,11 @@
     <div
         class="detail__container"
     >   
+        <button
+            class="detail__button"
+            (click)="goToCharacter()"
+        ><i class="fa-solid fa-backward"></i>
+        </button>
         <img class="detail__img" src="{{character.image}}" alt="">
         <p class="detail__name">{{"DETAIL.NAME" | translate}}: {{character.name}}</p>
         <p class="detail__parraf">{{"DETAIL.DATEOFBIRTHDAY" | translate}}: {{character.dateOfBirth}}</p>
@@ -25,6 +30,7 @@
             >{{"DETAIL.NO" | translate}}</span>
         </p>
     </div> 
+    
 </div>
 <ng-template
     #productNotFound

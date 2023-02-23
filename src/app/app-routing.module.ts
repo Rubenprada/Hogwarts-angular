@@ -29,6 +29,14 @@ const routes: Routes = [
     loadChildren: () => import('./pages/houses-list/houses-list.module').then(m => m.HousesListModule)
   },
   {
+    path: 'students-list',
+    loadChildren: () => import('./pages/students-list/students-list.module').then(m => m.StudentsListModule)
+  },
+  {
+    path: 'inscription-student',
+    loadChildren: () => import('./pages/inscription-student/inscription-student.module').then(m => m.InscriptionStudentModule)
+  },
+  {
     //para rutas no especificadas
     path: '**',
     loadChildren: () => import('./pages/not-found/not-found.module').then( m => m.NotFoundModule)

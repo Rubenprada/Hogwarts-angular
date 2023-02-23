@@ -7,13 +7,19 @@ una especie de objeto, en que el componente tiene las cosas a traducir-->
 <!--Pintamos con el character los elementos
     (se renderiza por cada elemento), NO CON EL CHARACTER-LIST.
 [input] ==> que tiene el componente character para recibir la info del bucle for que hacemos -->
-<div>
-    <div>
-        <input placeholder="Filtrar por nombre" [(ngModel)]="characterName">
+
+<div
+    class="character__list"
+>
+    <div
+        class="character__list_searcher"
+    >
+        <input class="searcher__input" placeholder="Filtrar por nombre" [(ngModel)]="characterName">
         <select 
             name="houses"
             required
             [(ngModel)]="houses"
+            class="searcher__select"
         >
             <option default value="">House</option>
             <option 

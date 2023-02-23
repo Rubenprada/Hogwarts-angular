@@ -1,0 +1,68 @@
+<div
+    class="register"
+>
+    <div
+        *ngIf="urlImg !== ''"
+        [ngStyle]="{
+            'background-image': 'url(' + urlImg+ ')'
+        }"
+    >
+        <p>No se si es una buena idea poner esa foto</p>
+    </div>
+    <form 
+        *ngIf="studentForm"
+        name="student"
+        [formGroup]="studentForm"
+        (submit)="registerNewStudent()">
+        <div>
+            <label for="name">Introduce el nombre</label>
+            <input 
+                placeholder="nombre"
+                name="name"
+                formControlName="name"
+            >
+            <p
+                *ngIf="!studentForm.get('name')?.valid 
+                    && studentForm.get('name')?.touched
+                    && studentForm.get('name')?.errors?.['required']"
+            >El nombre es obligatorio</p>
+            <p
+                *ngIf="!studentForm.get('name')?.valid 
+                    && studentForm.get('name')?.touched
+                    && studentForm.get('name')?.errors?.['pattern']"
+            >No puedes meter números</p>
+        </div>
+        <div>
+            <label for="surname">Introduce tus apellidos</label>
+            <input
+                placeholder="apellido"
+                name="surname"
+                formControlName="surname"
+            >
+            <p
+            *ngIf="!studentForm.get('surname')?.valid 
+                && studentForm.get('surname')?.touched
+                && studentForm.get('surname')?.errors?.['required']"
+            >Los apellidos son obligatorios</p>
+            <p
+            *ngIf="!studentForm.get('surname')?.valid 
+                && studentForm.get('surname')?.touched
+                && studentForm.get('surname')?.errors?.['pattern']"
+            >No puedes usar numeros</p>
+        </div>
+        <div>
+            <label for="avatar">Introduce tú foto</label>
+            <input
+                placeholder="imagen"
+                name="avatar"
+                formControlName="avatar"
+            >
+            <p
+            *ngIf="!studentForm.get('avatar')?.valid && studentForm.get('avatar')?.touched"
+            >Es obligatorio introducir una foto</p>
+        </div>
+        <button
+            type="submit"
+        >Registrar</button>
+    </form>
+</div>
