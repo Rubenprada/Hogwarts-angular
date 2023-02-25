@@ -1,0 +1,14 @@
+<h2
+    class="soons__h1"
+>{{ "MYSOONS.THESE ARE THE PEOPLE YOU HAVE SIGNED UP" | translate }}</h2>
+
+<div
+    class="soons__list_container"
+>
+    <app-soons-view
+        *ngFor="let mysoon of mySoons"
+        [soon]="mysoon"
+        (onRemove)="removeSoon(mysoon.id)"
+    ></app-soons-view>
+</div>
+

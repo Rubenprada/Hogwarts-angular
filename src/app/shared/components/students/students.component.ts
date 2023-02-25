@@ -1,5 +1,7 @@
-import { Students } from './../../../core/services/students/students.models';
-import { Component, Input } from '@angular/core';
+import { Students } from './../../../core/services/students/students.model';
+
+import { Component, Input, Output, EventEmitter } from '@angular/core';
+
 
 @Component({
   selector: 'app-students',
@@ -10,5 +12,11 @@ export class StudentsComponent {
 
 
   @Input() public student?: Students;
+  @Output() onRemove: EventEmitter<void> = new EventEmitter<void>();
+
+
+  public removeStudent() {
+    this.onRemove.emit()
+  }
 
 }

@@ -1,3 +1,4 @@
+import { MySoonsModule } from './pages/my-soons/my-soons.module';
 
 import { StudentsListModule } from './pages/students-list/students-list.module';
 import { HousesListModule } from './pages/houses-list/houses-list.module';
@@ -15,6 +16,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MySoonsComponent } from './pages/my-soons/my-soons.component';
 
 
 //funcion traductor
@@ -45,7 +47,8 @@ export function createTranslateLoader(http: HttpClient) {
     CoreModule,
     HousesListModule,
     StudentsListModule,
-    SharedModule
+    SharedModule,
+    MySoonsModule
     
   ],
   exports: [],

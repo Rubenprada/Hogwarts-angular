@@ -37,6 +37,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/inscription-student/inscription-student.module').then(m => m.InscriptionStudentModule)
   },
   {
+    path: 'my-soons',
+    loadChildren: () => import('./pages/my-soons/my-soons.module').then(m => m.MySoonsModule)
+  },
+  {
     //para rutas no especificadas
     path: '**',
     loadChildren: () => import('./pages/not-found/not-found.module').then( m => m.NotFoundModule)

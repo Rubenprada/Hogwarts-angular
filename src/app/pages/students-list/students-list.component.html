@@ -1,12 +1,16 @@
 <h2
     class="title"
 >{{"STUDENTS.ENROLLED STUDENTS" | translate}}</h2>
+<p
+    class="title"
+>{{"STUDENTS.YOU SHOULD TRY TOUCHING ON THE SMILEY FACE, WE HAVE LIMITED PLACES AT OUR SCHOOL, AND IT MAY HELP YOU" | translate}}</p>
 <div
     class="container"
 >   
     <app-students
-        *ngFor="let students of students"
-        [student]="students"
+        *ngFor="let student of students"
+        [student]="student"
+        (onRemove)="removeStudent(student.id)"
     >
     
     </app-students>

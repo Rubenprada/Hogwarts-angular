@@ -19,7 +19,8 @@
         "LANGUAGE": "Idioma",
         "HOUSES": "Casas",
         "STUDENTS": "Estudiantes",
-        "INSCRIPTION STUDENT": "Inscripciones de nuevos alumnos"
+        "INSCRIPTION STUDENT": "Inscripciones de nuevos alumnos",
+        "MY SOONS": "Mis inscripciones"
     },
     "NOTFOUND": {
         "DANGER": "La página la que intentas acceder no existe"
@@ -33,7 +34,8 @@
         "NO": "No"
     }, 
     "STUDENTS": {
-        "ENROLLED STUDENTS": "Alumnos inscritos"
+        "ENROLLED STUDENTS": "Alumnos inscritos",
+        "YOU SHOULD TRY TOUCHING ON THE SMILEY FACE, WE HAVE LIMITED PLACES AT OUR SCHOOL, AND IT MAY HELP YOU": "Deberias tocar en la cara sonriente, tenemos plazas limitadas en nuestro colegio, y puede que te ayude"
     },
     "HOUSES": {
         "OUR HOMES": "Nuestras casas",
@@ -42,5 +44,20 @@
     },
     "LOADING": {
         "Loading": "...Cargando"
+    },
+    "INSCRIPTION": {
+        "YOU THINK THAT IS THE BEST PHOTO YOU HAVE": "De verdad esa es tu mejor foto?",
+        "INSERT NAME": "Introduce nombre",
+        "THE NAME IS REQUIRED": "El nombre es obligatorio",
+        "YOU CANNOT ENTER NUMBERS": "No puedes introducir numeros",
+        "INSERT SURNAME": "Introduce apellido",
+        "THE SURNAME IS REQUIRED": "Los apellidos son obligatorios",
+        "ISERT YOUR PHOTO": "Introduce foto",
+        "PHOTO IS REQUIRED": "Es obligatorio introducir una foto",
+        "REGISTER": "Registrar"
+    },
+    "MYSOONS": {
+        "THESE ARE THE PEOPLE YOU HAVE SIGNED UP": "Estas son las personas a las que has inscrito",
+        "DELETE": "Eliminar"
     }
 }

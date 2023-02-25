@@ -1,3 +1,5 @@
+import { StudentsService } from './../../core/services/students/students.service';
+import { Students } from './../../core/services/students/students.model';
 import { students } from 'src/app/core/services/students/students.data';
 import { Homes } from './../../core/services/houses/homes.model';
 
@@ -15,15 +17,19 @@ export class HousesListComponent implements OnInit {
 
   public houses$?: Observable<Homes[]>;
 
-  public students = students;
+  public students: Students[] = [];
 
   constructor(
-    private housesService: HousesService
+    private housesService: HousesService,
+    private studentsService: StudentsService
   ) {}
   
 
   public ngOnInit() {
-    this.houses$ = this.housesService.getHouses()
+    this.houses$ = this.housesService.getHouses();
+    this.studentsService.getStudents().subscribe((studentsFromApi) => {
+      this.students = studentsFromApi
+    })
     
   }
 

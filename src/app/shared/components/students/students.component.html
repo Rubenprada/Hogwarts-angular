@@ -8,7 +8,7 @@
         <div
             class="container__div"
         >
-            <img class="img" src="{{ student.avatar }}" alt="">
+            <img class="img" src="{{ student.avatar }}">
         </div>
         <div
             class="container__p"
@@ -17,6 +17,11 @@
             <p>{{ student.surname }}</p>
             <p>{{ student.name}}</p>
         </div>
+        <button
+            (click)="removeStudent()"
+            class="button"
+        ><i class="fa-solid fa-face-smile-wink"></i></button>
     </div>
+    
 
 </div>

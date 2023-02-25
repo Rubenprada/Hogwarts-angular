@@ -1,0 +1,22 @@
+<div
+    *ngIf="soon"
+    class="container"
+>
+    <div>
+        <div
+            class="container__div"
+        >
+            <img class="img" src="{{ soon.avatar }}">
+        </div>
+    </div>
+    <div
+        class="container__p"
+    >
+        <p>{{ soon.surname }}</p>
+        <p>{{ soon.name}}</p>
+    </div>
+    <button
+        class="button"
+        (click)="removeSoon()"
+    >{{ "MYSOONS.DELETE" | translate }}</button>
+</div>

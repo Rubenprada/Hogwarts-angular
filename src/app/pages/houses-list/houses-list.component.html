@@ -20,13 +20,15 @@
 <div
     class="house__container"
 >
-    <h2>{{"HOUSES.Pre-registered students" | translate}}</h2>
+    <h2
+        class="students__list_h2"
+    >{{"HOUSES.Pre-registered students" | translate}}</h2>
     <div
         class="house__list_container"
     >
         <app-students
-            *ngFor="let students of students"
-            [student]="students"
+            *ngFor="let student of students"
+            [student]="student"
         >
         </app-students>
     

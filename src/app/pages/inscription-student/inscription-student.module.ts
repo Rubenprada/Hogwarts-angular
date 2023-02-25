@@ -1,3 +1,4 @@
+import { TranslateModule } from '@ngx-translate/core';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
@@ -16,7 +17,8 @@ import { InscriptionStudentComponent } from './inscription-student.component';
     InscriptionStudentRoutingModule,
     //importacion para formularios
     ReactiveFormsModule,
-    RouterModule
+    RouterModule, 
+    TranslateModule
   ]
 })
 export class InscriptionStudentModule { }

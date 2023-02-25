@@ -1,6 +1,68 @@
+
 .register{
-    height: 600px;
+    height: 400px;
     justify-content: center;
-    display: flex;
     align-items: center;
+    display: flex;
+    &__form{
+        margin-top: 20px;
+    }
+    &__form_input{
+        margin-left: 20px;
+        border-radius: 50px;
+        height: 35px;
+        text-align: center;
+    }
+    &__form_error{
+        font-weight: bold;
+        font-family: cursive;
+        color: red;
+    }
+    &__form_label{
+        font-family: cursive;
+        font-weight: bold;
+    }
+    &__button{
+        margin-left: 150px;
+        margin-top: 20px;
+        background-color: black;
+        color: aliceblue;
+        border-radius: 40px;
+        width: 80px;
+        height: 25px;
+        
+    }
+    &__button:hover{
+        color: lawngreen;
+        cursor: pointer;
+    }
+}
+
+.message__info{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+
+.avatar__preview{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    height: 180px;
+    &_div{
+        height: 180px;
+        background-repeat: no-repeat;
+        
+    }
+    &_p{
+        font-weight: bold;
+        font-family: cursive;
+        color: red;
+        margin-top: 200px;
+    }
 }

@@ -18,7 +18,8 @@
         "LANGUAGE": "Language",
         "HOUSES": "Houses",
         "STUDENTS": "Students",
-        "INSCRIPTION STUDENT": "Inscription new student"
+        "INSCRIPTION STUDENT": "Inscription new student",
+        "MY SOONS": "My inscriptions"
     },
     "NOTFOUND": {
         "DANGER": "The page you are trying to access does not exist"
@@ -32,7 +33,8 @@
         "NO": "No"
     },
     "STUDENTS": {
-        "ENROLLED STUDENTS": "Enrolled students"
+        "ENROLLED STUDENTS": "Enrolled students",
+        "YOU SHOULD TRY TOUCHING ON THE SMILEY FACE, WE HAVE LIMITED PLACES AT OUR SCHOOL, AND IT MAY HELP YOU": "Maybe you should try to touch on the smiling face, we hace limited places at our school, and it may help you"
     },
     "HOUSES": {
         "OUR HOMES": "Our homes",
@@ -41,5 +43,20 @@
     },
     "LOADING": {
         "Loading": "...Loading"
+    },
+    "INSCRIPTION": {
+        "YOU THINK THAT IS THE BEST PHOTO YOU HAVE": "You think that is the best photo have?",
+        "INSERT NAME": "Insert name",
+        "THE NAME IS REQUIRED": "The name is required",
+        "YOU CANNOT ENTER NUMBERS": "You cannot enter numbres",
+        "INSERT SURNAME": "Insert surname",
+        "THE SURNAME IS REQUIRED": "The surname is required",
+        "INSERT YOUR PHOTO": "Insert photo",
+        "PHOTO IS REQUIRED": "The photo is required",
+        "REGISTER": "Register"
+    },
+    "MYSOONS": {
+        "THESE ARE THE PEOPLE YOU HAVE SIGNED UP": "These are the people you have signed up",
+        "DELETE": "Delete"
     }
 }

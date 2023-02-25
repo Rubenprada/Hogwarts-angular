@@ -1,68 +1,98 @@
 <div
-    class="register"
+    class="avatar__preview"
 >
     <div
-        *ngIf="urlImg !== ''"
-        [ngStyle]="{
-            'background-image': 'url(' + urlImg+ ')'
-        }"
-    >
-        <p>No se si es una buena idea poner esa foto</p>
+            class="avatar__preview_div"
+            *ngIf="urlImg !== ''"
+            [ngStyle]="{
+                'background-image': 'url(' + urlImg+ ')'
+            }"
+        >
+    
+            <p
+                class="avatar__preview_p"
+            >{{"INSCRIPTION.YOU THINK THAT IS THE BEST PHOTO YOU HAVE" | translate}}</p>
     </div>
+</div>
+<div
+    class="register"
+>
+    
     <form 
+        class="register__form"
         *ngIf="studentForm"
         name="student"
         [formGroup]="studentForm"
         (submit)="registerNewStudent()">
-        <div>
-            <label for="name">Introduce el nombre</label>
-            <input 
+        <div
+            class="register__form"
+        >
+            <label class="register__form_label" for="name">{{"INSCRIPTION.INSERT NAME" | translate }}</label>
+            <input
+                class="register__form_input" 
                 placeholder="nombre"
                 name="name"
                 formControlName="name"
             >
             <p
+                class="register__form_error"
                 *ngIf="!studentForm.get('name')?.valid 
                     && studentForm.get('name')?.touched
                     && studentForm.get('name')?.errors?.['required']"
-            >El nombre es obligatorio</p>
+            >{{"INSCRIPTION.THE NAME IS REQUIRED" | translate}}</p>
             <p
+                class="register__form_error"
                 *ngIf="!studentForm.get('name')?.valid 
                     && studentForm.get('name')?.touched
                     && studentForm.get('name')?.errors?.['pattern']"
-            >No puedes meter números</p>
+            >{{"INSCRIPTION.YOU CANNOT ENTER NUMBERS" | translate}}</p>
         </div>
-        <div>
-            <label for="surname">Introduce tus apellidos</label>
+        <div
+            class="register__form"
+        >
+            <label class="register__form_label" for="surname">{{"INSCRIPTION.INSERT SURNAME" | translate }}</label>
             <input
+                class="register__form_input"
                 placeholder="apellido"
                 name="surname"
                 formControlName="surname"
             >
             <p
-            *ngIf="!studentForm.get('surname')?.valid 
-                && studentForm.get('surname')?.touched
-                && studentForm.get('surname')?.errors?.['required']"
-            >Los apellidos son obligatorios</p>
+                class="register__form_error"
+                *ngIf="!studentForm.get('surname')?.valid 
+                    && studentForm.get('surname')?.touched
+                    && studentForm.get('surname')?.errors?.['required']"
+            >{{"INSCRIPTION.THE SURNAME IS REQUIRED" | translate}}</p>
             <p
-            *ngIf="!studentForm.get('surname')?.valid 
-                && studentForm.get('surname')?.touched
-                && studentForm.get('surname')?.errors?.['pattern']"
-            >No puedes usar numeros</p>
+                class="register__form_error"
+                *ngIf="!studentForm.get('surname')?.valid 
+                    && studentForm.get('surname')?.touched
+                    && studentForm.get('surname')?.errors?.['pattern']"
+            >{{"INSCRIPTION.YOU CANNOT ENTER NUMBERS" | translate}}</p>
         </div>
-        <div>
-            <label for="avatar">Introduce tú foto</label>
+        <div
+            class="register__form"
+        >
+            <label class="register__form_label" for="avatar">{{"INSCRIPTION.INSERT YOUR PHOTO" | translate}}</label>
             <input
+                class="register__form_input"
                 placeholder="imagen"
                 name="avatar"
                 formControlName="avatar"
             >
             <p
-            *ngIf="!studentForm.get('avatar')?.valid && studentForm.get('avatar')?.touched"
-            >Es obligatorio introducir una foto</p>
+                class="register__form_error"
+                *ngIf="!studentForm.get('avatar')?.valid && studentForm.get('avatar')?.touched"
+            >{{"INSCRIPTION.PHOTO IS REQUIRED" | translate}}</p>
         </div>
         <button
+            [disabled]="!studentForm.valid"
             type="submit"
-        >Registrar</button>
+            class="register__button"
+        >{{"INSCRIPTION.REGISTER" | translate}}</button>
     </form>
 </div>
+<p
+    
+    class="message__info"
+>{{ formMessage }}</p>
