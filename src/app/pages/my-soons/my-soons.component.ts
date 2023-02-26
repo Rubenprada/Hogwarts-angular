@@ -1,3 +1,4 @@
+import { StudentsService } from './../../core/services/students/students.service';
 import { switchMap } from 'rxjs';
 import { mySoon } from './../../core/services/mySoons/my-soons.model';
 import { MySoonsService } from './../../core/services/mySoons/my-soons.service';
@@ -14,7 +15,8 @@ export class MySoonsComponent implements OnInit {
   public mySoons: mySoon[] = [];
 
   constructor(
-    private mySoonsService: MySoonsService
+    private mySoonsService: MySoonsService,
+    
   ) {
 
   }
@@ -34,6 +36,8 @@ export class MySoonsComponent implements OnInit {
       })
     ).subscribe((soonsFromApi) => {
       this.mySoons = soonsFromApi
+  
     })
   }
+
 }

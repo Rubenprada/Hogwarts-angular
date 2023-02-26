@@ -1,3 +1,5 @@
+import { Students } from './../students.model';
+
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
@@ -23,5 +25,10 @@ export class ApiStudentsService {
   //eliminar datos api
   public deleteApiStudents(id: string): Observable<ApiStudents> {
     return this.http.delete<ApiStudents>(`${API_STUDENTS_URL}/students/${id}`)
+  }
+
+  //crear nuevo
+  public createApiStudents(body: Students): Observable<ApiStudents> {
+    return this.http.post<ApiStudents>(`${API_STUDENTS_URL}/students`, body)
   }
 }

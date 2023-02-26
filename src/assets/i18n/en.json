@@ -34,7 +34,7 @@
     },
     "STUDENTS": {
         "ENROLLED STUDENTS": "Enrolled students",
-        "YOU SHOULD TRY TOUCHING ON THE SMILEY FACE, WE HAVE LIMITED PLACES AT OUR SCHOOL, AND IT MAY HELP YOU": "Maybe you should try to touch on the smiling face, we hace limited places at our school, and it may help you"
+        "YOU SHOULD TRY TOUCHING ON THE SMILEY FACE, WE HAVE LIMITED PLACES AT OUR SCHOOL, AND IT MAY HELP YOU": "Maybe you should try to touch on the smiling face, we have 10 limited places at our school, and it may help you"
     },
     "HOUSES": {
         "OUR HOMES": "Our homes",
@@ -58,5 +58,6 @@
     "MYSOONS": {
         "THESE ARE THE PEOPLE YOU HAVE SIGNED UP": "These are the people you have signed up",
         "DELETE": "Delete"
+        
     }
 }

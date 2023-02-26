@@ -35,7 +35,7 @@
     }, 
     "STUDENTS": {
         "ENROLLED STUDENTS": "Alumnos inscritos",
-        "YOU SHOULD TRY TOUCHING ON THE SMILEY FACE, WE HAVE LIMITED PLACES AT OUR SCHOOL, AND IT MAY HELP YOU": "Deberias tocar en la cara sonriente, tenemos plazas limitadas en nuestro colegio, y puede que te ayude"
+        "YOU SHOULD TRY TOUCHING ON THE SMILEY FACE, WE HAVE LIMITED PLACES AT OUR SCHOOL, AND IT MAY HELP YOU": "Deberias tocar en la cara sonriente, tenemos 10 plazas limitadas en nuestro colegio, y puede que te ayude"
     },
     "HOUSES": {
         "OUR HOMES": "Nuestras casas",
@@ -58,6 +58,7 @@
     },
     "MYSOONS": {
         "THESE ARE THE PEOPLE YOU HAVE SIGNED UP": "Estas son las personas a las que has inscrito",
-        "DELETE": "Eliminar"
+        "DELETE": "Eliminar",
+        "FINISH": "Enviar a estudiantes"
     }
 }

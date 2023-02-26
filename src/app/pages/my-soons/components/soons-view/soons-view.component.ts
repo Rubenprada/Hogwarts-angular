@@ -12,9 +12,15 @@ export class SoonsViewComponent {
   @Input() public soon?: ApimySoon;
   //mandamos la informacion al componente padre
   @Output() public onRemove: EventEmitter<void> = new EventEmitter<void>();
+  //mandamos otra informacion al padre
+  @Output() public onSend: EventEmitter<void> = new EventEmitter<void>();
 
   public removeSoon() {
     this.onRemove.emit()
+  }
+
+  public sendSoon() {
+    this.onSend.emit()
   }
 
 }
