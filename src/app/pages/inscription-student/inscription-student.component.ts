@@ -6,7 +6,6 @@ import { MessageService } from './../../core/services/messages/message.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
-import { mySoons } from 'src/app/core/services/mySoons/mySoons.data';
 
 
 @Component({

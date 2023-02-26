@@ -1,4 +1,4 @@
-import { House } from './../../../../core/services/characters/api/api-characters.model';
+import { House, ApiCharacter } from './../../../../core/services/characters/api/api-characters.model';
 import { Character } from './../../../../core/services/characters/character.model';
 
 

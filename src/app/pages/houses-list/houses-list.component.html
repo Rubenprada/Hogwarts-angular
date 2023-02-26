@@ -27,7 +27,7 @@
         class="house__list_container"
     >
         <app-students
-            *ngFor="let student of students"
+            *ngFor="let student of students$ | async"
             [student]="student"
         >
         </app-students>
