@@ -21,6 +21,9 @@ export class InscriptionStudentComponent implements OnInit {
   //variable para mostrar aviso de creacion correcta
   public formMessage: string = '';
 
+  //booleano para si esta relleno en formulario o no
+  public isStudentCreated: boolean = false;
+
   constructor (
     private fb: FormBuilder,
     private messageService: MessageService,
@@ -41,10 +44,17 @@ export class InscriptionStudentComponent implements OnInit {
   saveSoon() {
     this.soonService.createSoon(this.studentForm?.value).subscribe();
     this.studentsService.createStudent(this.studentForm?.value).subscribe();
+    this.isStudentCreated = true;
     //mandamos mensaje informativo
     this.messageService.setMessage('La inscripcion ha sido un exito, puede verlo en sus inscripciones como en los estudiantes');
     this.formMessage = this.messageService.getMessage();
-    
+    //reseteamos el formulario
+    this.studentForm?.reset();
+    //pasados 3000mls se quita el mensaje
+    setTimeout(() => {
+      this.messageService.setMessage('');
+      this.formMessage = this.messageService.getMessage();
+    }, 3000)
     
   }
 
@@ -55,8 +65,8 @@ export class InscriptionStudentComponent implements OnInit {
       if (!value) {return;}
       //si hay valor la variable URLIMG coge ese valor
       this.urlImg = value;
+      
     })
-    
   }
   
 }

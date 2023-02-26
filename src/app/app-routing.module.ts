@@ -1,3 +1,4 @@
+import { AuthGuard } from './core/guard/auth.guard';
 import { HomeComponent } from './pages/home/home.component';
 
 import { NgModule } from '@angular/core';
@@ -34,11 +35,17 @@ const routes: Routes = [
   },
   {
     path: 'inscription-student',
-    loadChildren: () => import('./pages/inscription-student/inscription-student.module').then(m => m.InscriptionStudentModule)
+    loadChildren: () => import('./pages/inscription-student/inscription-student.module').then(m => m.InscriptionStudentModule),
+    canActivate: [AuthGuard]
   },
   {
     path: 'my-soons',
-    loadChildren: () => import('./pages/my-soons/my-soons.module').then(m => m.MySoonsModule)
+    loadChildren: () => import('./pages/my-soons/my-soons.module').then(m => m.MySoonsModule),
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./pages/login/login/login.module').then(m => m.LoginModule)
   },
   {
     //para rutas no especificadas

@@ -1,3 +1,5 @@
+import { Router } from '@angular/router';
+import { AuthService } from './../../core/services/auth/auth.service';
 import { StudentsService } from './../../core/services/students/students.service';
 import { switchMap } from 'rxjs';
 import { mySoon } from './../../core/services/mySoons/my-soons.model';
@@ -16,7 +18,8 @@ export class MySoonsComponent implements OnInit {
 
   constructor(
     private mySoonsService: MySoonsService,
-    
+    private auth: AuthService,
+    private router: Router
   ) {
 
   }
@@ -40,4 +43,9 @@ export class MySoonsComponent implements OnInit {
     })
   }
 
+  //funcion para deslogar
+  public logoutUser() {
+    this.auth.logout();
+    this.router.navigate(['home'])
+  }
 }

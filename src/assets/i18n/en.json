@@ -19,7 +19,8 @@
         "HOUSES": "Houses",
         "STUDENTS": "Students",
         "INSCRIPTION STUDENT": "Inscription new student",
-        "MY SOONS": "My inscriptions"
+        "MY SOONS": "My inscriptions",
+        "LOGIN": "Login"
     },
     "NOTFOUND": {
         "DANGER": "The page you are trying to access does not exist"
@@ -59,5 +60,8 @@
         "THESE ARE THE PEOPLE YOU HAVE SIGNED UP": "These are the people you have signed up",
         "DELETE": "Delete"
         
+    },
+    "LOGIN": {
+        "LOGIN": "Login"
     }
 }

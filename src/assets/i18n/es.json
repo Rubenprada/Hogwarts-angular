@@ -20,7 +20,8 @@
         "HOUSES": "Casas",
         "STUDENTS": "Estudiantes",
         "INSCRIPTION STUDENT": "Inscripciones de nuevos alumnos",
-        "MY SOONS": "Mis inscripciones"
+        "MY SOONS": "Mis inscripciones",
+        "LOGIN": "Login"
     },
     "NOTFOUND": {
         "DANGER": "La página la que intentas acceder no existe"
@@ -60,5 +61,8 @@
         "THESE ARE THE PEOPLE YOU HAVE SIGNED UP": "Estas son las personas a las que has inscrito",
         "DELETE": "Eliminar",
         "FINISH": "Enviar a estudiantes"
+    },
+    "LOGIN": {
+        "LOGIN": "Login"
     }
 }

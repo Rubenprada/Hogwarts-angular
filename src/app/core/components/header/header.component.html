@@ -23,9 +23,15 @@
         [routerLink]="['inscription-student']"
     > {{ "HEADER.INSCRIPTION STUDENT" | translate }}</a>
     <a
+        *ngIf="isLogged"
         class="header__link"
         [routerLink]="['my-soons']"
     > {{ "HEADER.MY SOONS" | translate }}</a>
+    <a
+        *ngIf="!isLogged"
+        class="header__link"
+        [routerLink]="['login']"
+    > <i class="fa-solid fa-user"></i> {{ "HEADER.LOGIN" | translate }}</a>
     <div
         class="header__div"
     >

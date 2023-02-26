@@ -1,3 +1,4 @@
+import { ExitGuard } from './../../core/guard/exit.guard';
 import { InscriptionStudentComponent } from './inscription-student.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -5,7 +6,8 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path:'',
-    component: InscriptionStudentComponent
+    component: InscriptionStudentComponent,
+    canDeactivate: [ExitGuard]
   }
 ];
 
