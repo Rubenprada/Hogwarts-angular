@@ -48,6 +48,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/login/login/login.module').then(m => m.LoginModule)
   },
   {
+    path: 'about',
+    loadChildren: () => import('./pages/about/about.module').then(m => m.AboutModule)
+  },
+  {
     //para rutas no especificadas
     path: '**',
     loadChildren: () => import('./pages/not-found/not-found.module').then( m => m.NotFoundModule)

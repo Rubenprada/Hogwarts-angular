@@ -21,7 +21,8 @@
         "STUDENTS": "Estudiantes",
         "INSCRIPTION STUDENT": "Inscripciones de nuevos alumnos",
         "MY SOONS": "Mis inscripciones",
-        "LOGIN": "Login"
+        "LOGIN": "Login",
+        "ABOUT": "About"
     },
     "NOTFOUND": {
         "DANGER": "La página la que intentas acceder no existe"
@@ -64,5 +65,9 @@
     },
     "LOGIN": {
         "LOGIN": "Login"
+    },
+    "ABOUT": {
+        "Welcome to my application! I have created a kind of recreation of Hogwarts! In which you can see your characters, paged, and filter them, either by name or by house. In addition to seeing the houses, you will be able to see students who apply to enter this prestigious school. And if you log in you can also do it. I hope you like it": "Bienvenidos a mi aplicación¡ He creado una especie de recreación de Hogwarts¡ En la cual puedes, ver sus personajes, paginados, y filtrarlos, ya sea por nombre o por casa. Además de ver las casas, podrar ver a estudiantes que postulan a entrar en este prestigioso colegio. Y si te logueas también podrás hacerlo. Espero que os guste."
+        
     }
 }

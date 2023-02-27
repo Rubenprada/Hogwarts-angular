@@ -32,6 +32,11 @@
         class="header__link"
         [routerLink]="['login']"
     > <i class="fa-solid fa-user"></i> {{ "HEADER.LOGIN" | translate }}</a>
+    <a
+        *ngIf="!isLogged"
+        class="header__link"
+        [routerLink]="['about']"
+    >{{ "HEADER.ABOUT" | translate }}</a>
     <div
         class="header__div"
     >
