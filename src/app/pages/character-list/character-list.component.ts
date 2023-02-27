@@ -15,11 +15,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./character-list.component.scss']
 })
 export class CharacterListComponent implements OnInit{
-
+  
   //variable pública para que van a ser todos nuestros personajes
   //con las propiedades del modelo character
   public characters$?: Observable<Character[]>;
-  
+  public pages: number = 1;
   //variable para el input de busqueda
   public characterName: string = '';
   public houses?: House;
@@ -36,5 +36,6 @@ export class CharacterListComponent implements OnInit{
     this.characters$ = this.charactersService.getCharacters()
     
   }
+  
   
 }

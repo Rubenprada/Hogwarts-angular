@@ -17,6 +17,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MySoonsComponent } from './pages/my-soons/my-soons.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 
 //funcion traductor
@@ -48,7 +49,8 @@ export function createTranslateLoader(http: HttpClient) {
     HousesListModule,
     StudentsListModule,
     SharedModule,
-    MySoonsModule
+    MySoonsModule,
+    NgxPaginationModule
     
   ],
   exports: [],

@@ -1,5 +1,5 @@
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { StudentsListModule } from './../pages/students-list/students-list.module';
+
 import { StudentsComponent } from './components/students/students.component';
 
 
@@ -11,10 +11,12 @@ import { CommonModule } from '@angular/common';
 
 
 
+
 @NgModule({
   declarations: [
     FilterPipe,
-    StudentsComponent
+    StudentsComponent,
+    
   ],
   imports: [
     CommonModule,

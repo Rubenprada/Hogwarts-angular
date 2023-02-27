@@ -1,3 +1,4 @@
+import { NgxPaginationModule } from 'ngx-pagination';
 import { CoreModule } from './../../core/core.module';
 import { SharedModule } from './../../shared/shared.module';
 import { RouterModule } from '@angular/router';
@@ -27,7 +28,8 @@ import { FormsModule } from '@angular/forms';
     RouterModule,
     SharedModule,
     FormsModule,
-    CoreModule
+    CoreModule,
+    NgxPaginationModule
   ],
   exports: [
     CharacterListComponent

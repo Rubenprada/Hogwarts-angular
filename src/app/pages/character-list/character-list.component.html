@@ -28,13 +28,23 @@ una especie de objeto, en que el componente tiene las cosas a traducir-->
             >{{ house }}</option>
     </select>
     </div>
+    
     <div
         class="character__list_container"
     >
         <app-character
-            *ngFor="let character of characters$ | async | filter:characterName:houses"
+            *ngFor="let character of characters$ | async | filter:characterName:houses | paginate: {itemsPerPage: 10, currentPage: pages } "
             [character]="character"
         >
         </app-character>
+        
+    </div>
+    <div
+        class="pagination__container"
+    >
+        <pagination-controls 
+            class="pagination"
+            (pageChange)="pages = $event"
+        ></pagination-controls>
     </div>
 </div>
