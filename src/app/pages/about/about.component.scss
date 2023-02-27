@@ -1,0 +1,13 @@
+.container{
+    background-color: blanchedalmond;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__p{
+        text-align: center;
+        justify-content: center;
+        font-family: cursive;
+        font-weight: bold;
+    }
+}

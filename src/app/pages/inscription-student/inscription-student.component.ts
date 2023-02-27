@@ -28,7 +28,6 @@ export class InscriptionStudentComponent implements OnInit {
     private fb: FormBuilder,
     private messageService: MessageService,
     private soonService: MySoonsService,
-    private roter: Router,
     private studentsService: StudentsService
 
   ) {
@@ -54,6 +53,7 @@ export class InscriptionStudentComponent implements OnInit {
     setTimeout(() => {
       this.messageService.setMessage('');
       this.formMessage = this.messageService.getMessage();
+      this.urlImg = ''
     }, 3000)
     
   }
