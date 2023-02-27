@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     padding: 24px;
     background-color: blanchedalmond;
+    height: 500px;
     
 }
 .soons__h1{
@@ -11,4 +12,14 @@
     padding: 20px;
     font-family: Tahoma;
     background-color: blanchedalmond;
+}
+.button{
+    border-radius: 25px;
+    width: 100px;
+    cursor: pointer;
+
+}
+.container__button{
+    background-color: blanchedalmond;
+    text-align: end;
 }
